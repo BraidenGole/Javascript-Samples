@@ -1,0 +1,35 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-size: 100%;
+}
+
+main {
+    margin-left: 30px;
+}
+main #getInfo {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 100px;
+    height: 40px;
+}
+main #mobile {
+    margin-left: 30px;
+}
+main input[type=submit] {
+    width: 100px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 3px;
+    color: black;
+}
+main input[type=submit]:hover {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
+main input[type=submit]:disabled {
+    background-color: gray;
+    opacity: 0.5;
+    color: white;
+}
