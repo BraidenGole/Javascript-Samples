@@ -50,7 +50,6 @@ function onTypeFormatter() {
     // Dont let the user submit the form until charater length has been met.
     $(".submitForm").attr("disabled", true)
     $("#mobile").on("keyup", function() {
-        // Regular expression to filter only numbers from the input.
         const REGEX = "/\D/g"
         const REPLACEVAL = ""
         const OPENBRACE = '('
