@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- 
+    File            :   index.html
+    Project         :   None
+    Programmer      :   Braiden Gole
+    First version   :   2020-01-20
+    Description     :   In this sample we are going to be focused on
+                        creating a pizza by getting the user to manually enter
+                        in there toppings.
+
+                        NOTE: I understand "getting the users to type toppings"
+                              is asking a lot from the users, this is not an efficient way
+                              of collecting toppings from a user.
+                        
+                        NOTE: A solution to that would be maybe click buttons for the
+                              toppings you want for an example. This is just designed for the
+                              sake of an example with javascript.
+-->
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sample 4 | Braiden Gole</title>
+        <link rel="stylesheet" href="stylesheets/main.css">
+
+        <!-- jQuery CDN (Content Delivery Network) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1 class="centerText important">Click the Add (+) button do NOT press | ENTER |</h1>
+        </header>
+        <main>
+            <br>
+            <form action="#" method="post">
+                <fieldset class="center">
+                    <legend>Add Toppings</legend><br>
+                    <input type="text" id="toppings" name="toppings" autofocus>
+                    <input type="button" id="submit" value="Add +" onclick="addTopping();">
+                </fieldset>
+            </form>
+            <br>
+            <div class="center">
+                <header>
+                    <h1 class="underline doubleFontSize centerText">Toppings</h1><br>
+                </header>
+                <br>
+                <div id="dataContainer" class="centerText center">
+                    <br>
+                    <p id="fillWithData"></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <script src="sample4.js"></script>
+        </footer>
+    </body>
+</html>
