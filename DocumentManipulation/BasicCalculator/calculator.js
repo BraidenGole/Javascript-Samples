@@ -45,7 +45,7 @@ function multiply() {
 }
 
 function subtract() {
-    var result = nextNumber - firstNumber
+    var result = firstNumber - nextNumber
     console.log(result)
     $("#screenLabel").html(`${result}`)
     return nextNumber - firstNumber
