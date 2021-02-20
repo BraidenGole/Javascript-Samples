@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- 
+    File            :   index.html
+    Project         :   None
+    Programmer      :   Braiden Gole
+    First version   :   2021-02-19
+    Description     :   This is my basic calculator example.
+-->
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic Calculator | Braiden Gole</title>
+        <link rel="stylesheet" href="main.css">
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			  crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Calculator</h1><br>
+            <h5>This calculator is only meant for single digit calculations !</h5>
+        </header>
+        <main>
+            <div id="calculatorBody">
+                <div id="calculatorScreen">
+                    <p id="screenLabel"></p>
+                </div>
+                <div id="screenButtons">
+                    <section id="sectionTop">
+                        <aside>
+                            <button class="circle" onclick="clearScreen()">C</button>
+                            <button class="circle" onclick="clearEntry()">CE</button>
+                            <button class="circle" value="%">%</button>
+                            <button class="circle" value="/">/</button>
+                        </aside>
+                    </section>
+                    <section id="sectionMiddle">
+                        <aside>
+                            <button class="circle2" value="7">7</button>
+                            <button class="circle2" value="8">8</button>
+                            <button class="circle2" value="9">9</button><br>
+                            <button class="circle2" value="4">4</button>
+                            <button class="circle2" value="5">5</button>
+                            <button class="circle2" value="6">6</button><br>
+                            <button class="circle2" value="1">1</button>
+                            <button class="circle2" value="2">2</button>
+                            <button class="circle2" value="3">3</button><br>
+                            <button class="circle2" value="0">0</button>
+                        </aside>
+                    </section>
+                    <br>
+                    <section id="sectionRight">
+                        <aside>
+                            <button class="circle" value="x">x</button><br>
+                            <button class="circle" value="-">-</button><br>
+                            <button class="circle" value="+">+</button><br>
+                            <button class="circle" onclick="equate()">=</button>
+                        </aside>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            
+        </footer>
+
+        <!-- External Javascript file. -->
+        <script src="calculator.js"></script>
+    </body>
+</html>
